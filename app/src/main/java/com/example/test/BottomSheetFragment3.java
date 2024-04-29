@@ -23,7 +23,7 @@ public class BottomSheetFragment3 extends BottomSheetDialogFragment {
 ////        bottomSheetButton.setOnClickListener(new View.OnClickListener() {
 ////            @Override
 ////            public void onClick(View v) {
-////                dismiss(); // 바텀시트를 닫습니다.
+////                dismiss(); // 바텀시트 닫기
 ////            }
 ////        });
 //

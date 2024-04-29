@@ -28,7 +28,7 @@ public class BottomSheetFragment1 extends BottomSheetDialogFragment {
     public interface CheckedItemsListener {
         void onCheckedItemsChanged(List<String> checkedItems);
 
-//        // BottomSheetFragment1에서 선택된 아이템을 받아옵니다.
+//        // BottomSheetFragment1에서 선택된 아이템을 받아오기
 //        void onCheckedItemsChangedBottomSheet1(List<String> checkedItems);
 //
 //        void onCheckedItemsChangedBottomSheet2(List<String> checkedItems);
@@ -102,7 +102,7 @@ public class BottomSheetFragment1 extends BottomSheetDialogFragment {
     @Override
     public void onResume() {
         super.onResume();
-        // 두 번째 레이아웃으로 이동할 때 선택된 항목에 해당하는 텍스트뷰를 설정합니다.
+        // 두 번째 레이아웃으로 이동할 때 선택된 항목에 해당하는 텍스트뷰를 설정
         View fragmentSecondView = requireActivity().findViewById(R.id.fragmentContainerView);
         TextView selectedItemsTextView = fragmentSecondView.findViewById(R.id.second_bottom);
 

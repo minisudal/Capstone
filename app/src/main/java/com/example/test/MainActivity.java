@@ -77,14 +77,14 @@ public class MainActivity extends AppCompatActivity implements BottomSheetFragme
 
 //    @Override
 //    public void onCheckedItemsChangedBottomSheet1(List<String> checkedItems) {
-//        // BottomSheetFragment1에서 선택된 항목을 받아올 때의 동작을 여기에 구현합니다.
-//        // 예를 들어, 선택된 항목을 처리하거나 다른 동작을 수행할 수 있습니다.
+//        // BottomSheetFragment1에서 선택된 항목을 받아올 때의 동작을 여기에 구현
+//
 //    }
 //
 //    @Override
 //    public void onCheckedItemsChangedBottomSheet2(List<String> checkedItems) {
-//        // BottomSheetFragment2에서 선택된 항목을 받아올 때의 동작을 여기에 구현합니다.
-//        // 예를 들어, 선택된 항목을 처리하거나 다른 동작을 수행할 수 있습니다.
+//        // BottomSheetFragment2에서 선택된 항목을 받아올 때의 동작을 여기에 구현
+//
 //    }
 
 

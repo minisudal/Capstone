@@ -16,19 +16,6 @@ public class BottomSheetFragment2 extends BottomSheetDialogFragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
 
-//        View view = inflater.inflate(R.layout.bottom_sheet_layout1, container, false);
-//
-////        // 바텀시트 내 버튼의 클릭 이벤트 처리
-////        Button bottomSheetButton = view.findViewById(R.id.bottomSheetButton);
-////        bottomSheetButton.setOnClickListener(new View.OnClickListener() {
-////            @Override
-////            public void onClick(View v) {
-////                dismiss(); // 바텀시트를 닫습니다.
-////            }
-////        });
-//
-//        return view;
-
         return inflater.inflate(R.layout.bottom_sheet_layout2, container, false);
     }
 }
