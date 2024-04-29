@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#FFFFFF"
+    tools:context=".SecondFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+<!--    <TextView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:text="냉장고" />-->
+    <android.widget.Button
+        android:id="@+id/btSheet_button1"
+        android:layout_width="80dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="50dp"
+        android:text="카테고리1"
+        android:background="@drawable/round_button" />
+
+    <android.widget.Button
+        android:id="@+id/btSheet_button2"
+        android:layout_width="80dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="165dp"
+        android:text="카테고리2"
+        android:background="@drawable/round_button" />
+
+    <android.widget.Button
+        android:id="@+id/btSheet_button3"
+        android:layout_width="80dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="280dp"
+        android:text="카테고리3"
+        android:background="@drawable/round_button" />
+
+    <android.widget.Button
+        android:id="@+id/btSheet_button4"
+        android:layout_width="80dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginLeft="50dp"
+        android:text="카테고리4"
+        android:background="@drawable/round_button" />
+
+    <android.widget.Button
+        android:id="@+id/btSheet_button5"
+        android:layout_width="80dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginLeft="165dp"
+        android:text="카테고리5"
+        android:background="@drawable/round_button" />
+
+    <android.widget.Button
+        android:id="@+id/btSheet_button6"
+        android:layout_width="80dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginLeft="280dp"
+        android:text="카테고리6"
+        android:background="@drawable/round_button" />
+
+    <TextView
+        android:id="@+id/second_bottom"
+        android:layout_width="350dp"
+        android:layout_height="match_parent"
+        android:text=""
+        android:textSize="15sp"
+        android:paddingTop="40dp"
+        android:textAlignment="center"
+        android:layout_marginTop="350dp"
+        android:layout_marginLeft="30dp"
+        android:background="@drawable/second_layout_bottom"/>
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent" -->
+<!--        />-->
+    <TextView
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:text="재료 현황"
+        android:textSize="16sp"
+        android:textAlignment="center"
+        android:layout_marginTop="360dp"
+        android:layout_marginLeft="30dp"/>
+
+</FrameLayout>
