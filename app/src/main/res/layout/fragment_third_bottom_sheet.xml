@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical"
-    tools:context=".BottomSheetFragment2">
+    tools:context=".ThirdBottomSheetFragment">
 
     <FrameLayout
         android:id="@+id/bottom_sheet_container"
@@ -15,7 +15,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Bottom Sheet 2"
+            android:text="Bottom Sheet 3"
             android:textAlignment="center"
             android:textSize="20dp"
             android:padding="10dp"

@@ -20,18 +20,13 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class BottomSheetFragment1 extends BottomSheetDialogFragment {
+public class ThirdBottomSheetFragment extends BottomSheetDialogFragment {
 
-    private List<String> itemList = Arrays.asList("Item 1", "Item 2", "Item 3", "Item 4"); // 예시 리스트
+    private List<String> itemList = Arrays.asList("Option A", "Option B", "Option C", "Option D"); // 예시 리스트
     private List<String> checkedItems = new ArrayList<>(); // 체크된 항목을 저장할 리스트
 
     public interface CheckedItemsListener {
         void onCheckedItemsChanged(List<String> checkedItems);
-
-//        // BottomSheetFragment1에서 선택된 아이템을 받아오기
-//        void onCheckedItemsChangedBottomSheet1(List<String> checkedItems);
-//
-//        void onCheckedItemsChangedBottomSheet2(List<String> checkedItems);
     }
 
     private CheckedItemsListener mListener;
@@ -40,7 +35,7 @@ public class BottomSheetFragment1 extends BottomSheetDialogFragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
 
-        View view = inflater.inflate(R.layout.bottom_sheet_layout1, container, false);
+        View view = inflater.inflate(R.layout.fragment_third_bottom_sheet, container, false);
         FrameLayout checkboxLayout = view.findViewById(R.id.bottom_sheet_container);
         SharedPreferences sharedPreferences = requireActivity().getPreferences(Context.MODE_PRIVATE);
 
@@ -93,26 +88,29 @@ public class BottomSheetFragment1 extends BottomSheetDialogFragment {
     public void onAttach(@NonNull Context context) {
         super.onAttach(context);
         try {
-            mListener = (CheckedItemsListener) context;
+            mListener = (CheckedItemsListener) getParentFragment(); // 부모 Fragment에 연결
+            if (mListener == null) {
+                throw new ClassCastException("Parent fragment must implement CheckedItemsListener");
+            }
         } catch (ClassCastException e) {
-            throw new ClassCastException(context.toString());
+            throw new ClassCastException(context.toString() + " must implement CheckedItemsListener");
         }
     }
 
-//    @Override
-//    public void onResume() {
-//        super.onResume();
-//        // 두 번째 레이아웃으로 이동할 때 선택된 항목에 해당하는 텍스트뷰를 설정
-//        View fragmentSecondView = requireActivity().findViewById(R.id.fragmentContainerView);
-//        TextView selectedItemsTextView = fragmentSecondView.findViewById(R.id.second_bottom);
-//
-//        SharedPreferences sharedPreferences = requireActivity().getPreferences(Context.MODE_PRIVATE);
-//        StringBuilder selectedItemsText = new StringBuilder();
-//        for (String item : itemList) {
-//            if (sharedPreferences.getBoolean(item, false)) {
-//                selectedItemsText.append(item).append("\n");
-//            }
-//        }
-//        selectedItemsTextView.setText(selectedItemsText.toString());
-//    }
+    @Override
+    public void onResume() {
+        super.onResume();
+        // 선택된 항목에 해당하는 텍스트뷰를 설정
+        View fragmentSecondView = requireActivity().findViewById(R.id.fragmentContainerView);
+        TextView selectedItemsTextView = fragmentSecondView.findViewById(R.id.second_bottom);
+
+        SharedPreferences sharedPreferences = requireActivity().getPreferences(Context.MODE_PRIVATE);
+        StringBuilder selectedItemsText = new StringBuilder();
+        for (String item : itemList) {
+            if (sharedPreferences.getBoolean(item, false)) {
+                selectedItemsText.append(item).append("\n");
+            }
+        }
+        selectedItemsTextView.setText(selectedItemsText.toString());
+    }
 }

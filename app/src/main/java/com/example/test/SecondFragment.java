@@ -59,7 +59,7 @@ public class SecondFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 // 바텀시트를 띄우는 코드
-                BottomSheetFragment3 bottomSheetFragment = new BottomSheetFragment3();
+                ThirdBottomSheetFragment bottomSheetFragment = new ThirdBottomSheetFragment();
                 bottomSheetFragment.show(getParentFragmentManager(), bottomSheetFragment.getTag());
             }
         });

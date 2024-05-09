@@ -23,6 +23,7 @@ public class MainActivity extends AppCompatActivity implements BottomSheetFragme
     Fragment thirdFragment;
     BottomSheetFragment1 bottomSheetFragment1;
     BottomSheetFragment2 bottomSheetFragment2;
+    BottomSheetFragment2 bottomSheetFragment3;
 
 
     @Override
