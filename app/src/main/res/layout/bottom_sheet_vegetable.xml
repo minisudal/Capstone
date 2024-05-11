@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="500dp"
+    android:orientation="vertical"
+    android:background="@drawable/bottom_sheet_border">
+
+<!--    <LinearLayout-->
+<!--        android:id="@+id/bottom_sheet"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="40dp"-->
+<!--        android:orientation="vertical">-->
+
+<!--        <View-->
+<!--            android:id="@+id/handlebar"-->
+<!--            android:layout_width="100dp"-->
+<!--            android:layout_height="3dp"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:layout_marginTop="15dp"-->
+<!--            android:background="@android:color/darker_gray"-->
+<!--            android:clickable="true"/>-->
+<!--    </LinearLayout>-->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="채소"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textSize="23dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="15dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="15dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="40dp"
+                    android:textSize="15dp"
+                    android:text="채소 종류?" />
+                <View
+                    android:layout_width="240dp"
+                    android:layout_height="2dp"
+                    android:background="#A0A0C8"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginStart="125dp" />
+            </FrameLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:id="@+id/layoutEdit1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="100dp"
+                    android:layout_marginStart="70dp"
+                    android:orientation="horizontal"
+                    android:paddingRight="8dp">
+                    <CheckBox
+                        android:id="@+id/checkBox1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="채소1"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/layoutEdit2"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <CheckBox
+                        android:id="@+id/checkBox2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="채소2"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:id="@+id/layoutEdit3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="100dp"
+                    android:layout_marginStart="70dp"
+                    android:orientation="horizontal"
+                    android:paddingRight="8dp">
+                    <CheckBox
+                        android:id="@+id/checkBox3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="채소3" />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/layoutEdit4"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp">
+                    <CheckBox
+                        android:id="@+id/checkBox4"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="채소4"/>
+                </LinearLayout>
+            </LinearLayout>
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="40dp"
+                    android:textSize="15dp"
+                    android:text="또 뭐있지?" />
+                <View
+                    android:layout_width="240dp"
+                    android:layout_height="2dp"
+                    android:background="#A0A0C8"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginStart="125dp" />
+            </FrameLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:id="@+id/layoutEdit13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="100dp"
+                    android:layout_marginStart="70dp"
+                    android:orientation="horizontal"
+                    android:paddingRight="8dp">
+                    <CheckBox
+                        android:id="@+id/checkBox13"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="채소5" />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/layoutEdit14"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp">
+                    <CheckBox
+                        android:id="@+id/checkBox14"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="채소6"/>
+                </LinearLayout>
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="스\n크\n롤\n바\n테\n스\n트\n스\n크\n롤\n바\n테\n스\n트\n스\n크\n롤\n바\n테\n스\n트" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

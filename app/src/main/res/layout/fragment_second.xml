@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -14,82 +14,108 @@
 <!--        android:layout_height="match_parent"-->
 <!--        android:text="냉장고" />-->
     <android.widget.Button
-        android:id="@+id/btSheet_button1"
-        android:layout_width="80dp"
-        android:layout_height="70dp"
-        android:layout_marginTop="100dp"
-        android:layout_marginLeft="50dp"
-        android:text="카테고리1"
+        android:id="@+id/button1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="70dp"
+        android:text="채소"
+        app:layout_constraintHeight_percent="0.12"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.25"
         android:background="@drawable/round_button" />
 
     <android.widget.Button
-        android:id="@+id/btSheet_button2"
-        android:layout_width="80dp"
-        android:layout_height="70dp"
-        android:layout_marginTop="100dp"
-        android:layout_marginLeft="165dp"
-        android:text="카테고리2"
+        android:id="@+id/button2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="70dp"
+        android:text="육류"
+        app:layout_constraintHeight_percent="0.12"
+        app:layout_constraintStart_toEndOf="@id/button1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.25"
         android:background="@drawable/round_button" />
 
     <android.widget.Button
-        android:id="@+id/btSheet_button3"
-        android:layout_width="80dp"
-        android:layout_height="70dp"
-        android:layout_marginTop="100dp"
-        android:layout_marginLeft="280dp"
-        android:text="카테고리3"
+        android:id="@+id/button3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="70dp"
+        android:text="해산물"
+        app:layout_constraintHeight_percent="0.12"
+        app:layout_constraintStart_toEndOf="@id/button2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.25"
         android:background="@drawable/round_button" />
 
     <android.widget.Button
-        android:id="@+id/btSheet_button4"
-        android:layout_width="80dp"
-        android:layout_height="70dp"
-        android:layout_marginTop="200dp"
-        android:layout_marginLeft="50dp"
-        android:text="카테고리4"
+        android:id="@+id/button4"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintWidth_percent="0.25"
+        app:layout_constraintHeight_percent="0.12"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:text="조미료"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/button1"
         android:background="@drawable/round_button" />
 
     <android.widget.Button
-        android:id="@+id/btSheet_button5"
-        android:layout_width="80dp"
-        android:layout_height="70dp"
-        android:layout_marginTop="200dp"
-        android:layout_marginLeft="165dp"
-        android:text="카테고리5"
+        android:id="@+id/button5"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintWidth_percent="0.25"
+        app:layout_constraintHeight_percent="0.12"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:text="유제품"
+        app:layout_constraintStart_toEndOf="@id/button4"
+        app:layout_constraintTop_toBottomOf="@id/button2"
         android:background="@drawable/round_button" />
 
     <android.widget.Button
-        android:id="@+id/btSheet_button6"
-        android:layout_width="80dp"
-        android:layout_height="70dp"
-        android:layout_marginTop="200dp"
-        android:layout_marginLeft="280dp"
-        android:text="카테고리6"
+        android:id="@+id/button6"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintWidth_percent="0.25"
+        app:layout_constraintHeight_percent="0.12"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:text="기타"
+        app:layout_constraintStart_toEndOf="@id/button5"
+        app:layout_constraintTop_toBottomOf="@id/button3"
         android:background="@drawable/round_button" />
 
-    <TextView
-        android:id="@+id/second_bottom"
-        android:layout_width="350dp"
+    <LinearLayout
+        android:id="@+id/myIngredient"
+        android:orientation="vertical"
+        android:layout_width="0dp"
         android:layout_height="match_parent"
-        android:text=""
-        android:textSize="15sp"
-        android:paddingTop="40dp"
-        android:textAlignment="center"
-        android:layout_marginTop="350dp"
-        android:layout_marginLeft="30dp"
-        android:background="@drawable/second_layout_bottom"/>
-<!--        app:layout_constraintBottom_toBottomOf="parent"-->
-<!--        app:layout_constraintEnd_toEndOf="parent"-->
-<!--        app:layout_constraintStart_toStartOf="parent"-->
-<!--        app:layout_constraintTop_toTopOf="parent" -->
-<!--        />-->
-    <TextView
-        android:layout_width="350dp"
-        android:layout_height="wrap_content"
-        android:text="재료 현황"
-        android:textSize="16sp"
-        android:textAlignment="center"
-        android:layout_marginTop="360dp"
-        android:layout_marginLeft="30dp"/>
+        app:layout_constraintHeight_percent="0.5"
+        android:padding="8dp"
 
-</FrameLayout>
+        android:background="@drawable/second_layout_bottom"
+
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="300dp"
+        android:layout_marginEnd="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/button5">
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="재료 현황"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

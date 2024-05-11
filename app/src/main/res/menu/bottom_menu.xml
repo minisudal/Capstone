@@ -13,4 +13,5 @@
         android:id="@+id/thirdFragment"
         android:icon="@drawable/star"
         android:title="생활팁" />
+
 </menu>
