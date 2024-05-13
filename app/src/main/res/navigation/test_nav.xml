@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/test_nav"
+    app:startDestination="@id/tipfragment4">
+
+    <fragment
+        android:id="@+id/tipFragment4"
+        android:name="com.example.test.TipFragment4"
+        android:label="fragment_tip6"
+        tools:layout="@layout/fragment_tip4" />
+</navigation>

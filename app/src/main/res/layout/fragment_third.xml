@@ -5,11 +5,11 @@
     android:layout_height="match_parent"
     android:background="@color/white">
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="match_parent"
-        android:layout_height="182dp"
-        app:srcCompat="@android:drawable/ic_dialog_alert" />
+<!--    <ImageView-->
+<!--        android:id="@+id/imageView"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="182dp"-->
+<!--        app:srcCompat="@android:drawable/ic_dialog_alert" />-->
     <Button
         android:id="@+id/tipbutton1"
         android:layout_width="196dp"

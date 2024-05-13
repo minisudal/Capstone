@@ -9,90 +9,46 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
         android:text="해산물"
+        android:textStyle="bold"
+        android:textColor="@color/black"
         android:textAlignment="center"
-        android:textSize="20dp"
-        android:padding="10dp" />
+        android:textSize="23dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="15dp" /> />
 
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
-
         <LinearLayout
             android:id="@+id/layoutEdit1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
             android:layout_marginEnd="100dp"
-            android:layout_marginStart="10dp"
+            android:layout_marginStart="70dp"
             android:orientation="horizontal"
-            android:padding="8dp">
-
-
-
+            android:paddingRight="8dp">
             <CheckBox
-                android:id="@+id/checkBox9"
+                android:id="@+id/Sea_Mustard"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:text="해산물1" />
-
+                android:text="미역" />
         </LinearLayout>
         <LinearLayout
             android:id="@+id/layoutEdit2"
             android:orientation="horizontal"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:padding="8dp">
-
-
-
+            android:layout_marginTop="10dp">
             <CheckBox
-                android:id="@+id/checkBox10"
+                android:id="@+id/Shrimp"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:text="해산물2"/>
-
+                android:text="새우"/>
         </LinearLayout>
     </LinearLayout>
 
-    <LinearLayout
-        android:orientation="horizontal"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-        <LinearLayout
-            android:id="@+id/layoutEdit3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="100dp"
-            android:layout_marginStart="10dp"
-            android:orientation="horizontal"
-            android:padding="8dp">
-
-
-
-            <CheckBox
-                android:id="@+id/checkBox11"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:text="해산물3" />
-
-        </LinearLayout>
-        <LinearLayout
-            android:id="@+id/layoutEdit4"
-            android:orientation="horizontal"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:padding="8dp">
-
-
-
-            <CheckBox
-                android:id="@+id/checkBox12"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:text="해산물4"/>
-
-        </LinearLayout>
-    </LinearLayout>
 </LinearLayout>

@@ -84,10 +84,12 @@ public class SecondFragment extends Fragment {
         LinearLayout myIngredient = requireView().findViewById(R.id.myIngredient);
 
         // Array of checkbox IDs
-        int[] checkboxIds = {R.id.checkBox1, R.id.checkBox2, R.id.checkBox3, R.id.checkBox4,
-                R.id.checkBox5, R.id.checkBox6, R.id.checkBox7, R.id.checkBox8,
-                R.id.checkBox9, R.id.checkBox10, R.id.checkBox11, R.id.checkBox12,
-                R.id.checkBox13, R.id.checkBox14}; // Add more checkbox IDs as needed
+        int[] checkboxIds = {R.id.Green_Onion, R.id.Onion, R.id.Potato, R.id.Carrot, R.id.Chili, R.id.Cheongyang_Hot_Pepper, R.id.Garlic, R.id.Minced_Garlic,
+                R.id.Perilla_leaf, R.id.Cabbage, R.id.Leek, R.id.Bean_Sprouts, R.id.Zucchini, R.id.Paprika, R.id.Enoki_Mushroom, R.id.King_Oyster_Mushroom,
+                R.id.Pork_Belly, R.id.Beef, R.id.Pork_FrontLeg, R.id.Pork_BackLeg, R.id.Minced_Pork, R.id.Minced_Meet, R.id.Chicken_Leg_Meat, R.id.Chicken_Breast,
+                R.id.Sea_Mustard, R.id.Shrimp, R.id.Sugar, R.id.Salt, R.id.Pepper, R.id.Red_Pepper_Powder, R.id.Aged_Soy_Sauce, R.id.Brewed_Soy_Sauce, R.id.Red_Pepper_Paste,
+                R.id.Fermented_Soybean_Paste, R.id.Ssamjang, R.id.Ketchup, R.id.Mayonnaise, R.id.Mustard, R.id.Sesame_Oil, R.id.Starch_Syrup, R.id.Oyster_Sauce, R.id.Salted_Anchovy_Sauce,
+                R.id.Eggs, R.id.Quail_Eggs, R.id.Mozzarella_Cheese, R.id.Sliced_Cheese, R.id.Milk}; // Add more checkbox IDs as needed
 
         for (int checkboxId : checkboxIds) {
             CheckBox checkBox = dialog.findViewById(checkboxId);

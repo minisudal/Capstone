@@ -39,9 +39,9 @@ public class MainActivity extends AppCompatActivity {
                 replaceFragment(new SecondFragment());
             } else if (itemId == R.id.thirdFragment) {
                 replaceFragment(new ThirdFragment());
-            } /*else if (itemId == R.id.notification) {
-                replaceFragment(new NotificationsFragment());
-            } else if (itemId == R.id.bookmark) {
+            } /*else if (itemId == R.id.tipbutton4) {
+                replaceFragment(new TipFragment5());
+            } /*else if (itemId == R.id.bookmark) {
                 replaceFragment(new BookmarkFragment());
             } else if (itemId == R.id.history) {
                 replaceFragment(new HistoryFragment());
