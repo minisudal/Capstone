@@ -10,11 +10,7 @@ import android.view.ViewGroup;
 import android.view.Window;
 import android.widget.Button;
 
-import androidx.annotation.Nullable;
-import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentManager;
-import androidx.fragment.app.FragmentTransaction;
 
 public class ThirdFragment extends Fragment {
 
@@ -32,13 +28,11 @@ public class ThirdFragment extends Fragment {
         button1.setOnClickListener(v -> showDialog(R.layout.fragment_tip1));
         button2.setOnClickListener(v -> showDialog(R.layout.fragment_tip2));
         button3.setOnClickListener(v -> showDialog(R.layout.fragment_tip3));
-//        button4.setOnClickListener(v -> showDialog(R.layout.fragment_tip4));
-        // button4 클릭 시 TipFragment5로 이동하도록 수정
-        button4.setOnClickListener(v -> {
+        button4.setOnClickListener(v -> showDialog(R.layout.fragment_tip4));
+        button5.setOnClickListener(v -> {
             Intent intent = new Intent(requireContext(), TipActivity.class);
             startActivity(intent);
         });
-        button5.setOnClickListener(v -> showDialog(R.layout.fragment_tip5));
 
         return rootView;
     }

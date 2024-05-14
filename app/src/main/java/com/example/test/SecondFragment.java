@@ -50,8 +50,8 @@ public class SecondFragment extends Fragment {
         button1.setOnClickListener(v -> showDialog(R.layout.bottom_sheet_vegetable));
         button2.setOnClickListener(v -> showDialog(R.layout.bottom_sheet_meat));
         button3.setOnClickListener(v -> showDialog(R.layout.bottom_sheet_seafood));
-        button4.setOnClickListener(v -> showDialog(R.layout.bottom_sheet_condiment));
-        button5.setOnClickListener(v -> showDialog(R.layout.bottom_sheet_dairy));
+        button4.setOnClickListener(v -> showDialog(R.layout.bottom_sheet_dairy));
+        button5.setOnClickListener(v -> showDialog(R.layout.bottom_sheet_condiment));
         button6.setOnClickListener(v -> showDialog(R.layout.bottom_sheet_others));
 
         return rootView;

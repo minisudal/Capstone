@@ -9,8 +9,10 @@
     <TextView
         android:id="@+id/textView2"
         android:layout_width="match_parent"
-        android:layout_height="62dp"
-        android:text="                     음식 처리 였나"
+        android:layout_height="wrap_content"
+        android:text="음식 처리 였나"
+        android:textAlignment="center"
+        android:layout_marginTop="10dp"
         android:textSize="25sp" />
 
     <TextView

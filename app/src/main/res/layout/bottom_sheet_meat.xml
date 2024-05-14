@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Meets"
     android:layout_width="match_parent"
     android:layout_height="500dp"
     android:orientation="vertical"
     android:background="@drawable/bottom_sheet_border">
+
 
     <TextView
         android:layout_width="match_parent"
@@ -18,134 +20,210 @@
         android:paddingTop="10dp"
         android:paddingBottom="15dp" />
 
-    <LinearLayout
-        android:orientation="horizontal"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-        <LinearLayout
-            android:id="@+id/layoutEdit1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:layout_marginEnd="100dp"
-            android:layout_marginStart="70dp"
-            android:orientation="horizontal"
-            android:paddingRight="8dp">
-            <CheckBox
-                android:id="@+id/Pork_Belly"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:text="삼겹살" />
-        </LinearLayout>
-        <LinearLayout
-            android:id="@+id/layoutEdit2"
-            android:orientation="horizontal"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp">
-            <CheckBox
-                android:id="@+id/Beef"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:text="소고기"/>
-        </LinearLayout>
-    </LinearLayout>
-    <LinearLayout
-        android:orientation="horizontal"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-        <LinearLayout
-            android:id="@+id/layoutEdit3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:layout_marginEnd="25dp"
-            android:layout_marginStart="70dp"
-            android:orientation="horizontal"
-            android:paddingRight="8dp">
-            <CheckBox
-                android:id="@+id/Pork_FrontLeg"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:text="돼지고기(앞다리살)" />
-        </LinearLayout>
-        <LinearLayout
-            android:id="@+id/layoutEdit4"
-            android:orientation="horizontal"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp">
-            <CheckBox
-                android:id="@+id/Pork_BackLeg"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:text="돼지고기(뒷다리살)"/>
-        </LinearLayout>
-    </LinearLayout>
-    <LinearLayout
-        android:orientation="horizontal"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-        <LinearLayout
-            android:id="@+id/layoutEdit5"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:layout_marginEnd="58dp"
-            android:layout_marginStart="70dp"
-            android:orientation="horizontal"
-            android:paddingRight="8dp">
-            <CheckBox
-                android:id="@+id/Minced_Pork"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:text="다진 돼지고기" />
-        </LinearLayout>
-        <LinearLayout
-            android:id="@+id/layoutEdit6"
-            android:orientation="horizontal"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp">
-            <CheckBox
-                android:id="@+id/Minced_Meet"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:text="다진 소고기"/>
-        </LinearLayout>
-    </LinearLayout>
-    <LinearLayout
-        android:orientation="horizontal"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-        <LinearLayout
-            android:id="@+id/layoutEdit7"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:layout_marginEnd="87dp"
-            android:layout_marginStart="70dp"
-            android:orientation="horizontal"
-            android:paddingRight="8dp">
-            <CheckBox
-                android:id="@+id/Chicken_Leg_Meat"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:text="닭다리살" />
-        </LinearLayout>
-        <LinearLayout
-            android:id="@+id/layoutEdit8"
-            android:orientation="horizontal"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp">
-            <CheckBox
-                android:id="@+id/Chicken_Breast"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:text="닭가슴살"/>
-        </LinearLayout>
-    </LinearLayout>
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:scrollbars="none">
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginEnd="40dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:text="돼지고기"
+                    android:layout_marginEnd="10dp"
+                    android:textColor="@color/black"/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:textStyle="bold"
+                    android:background="#A0A0C8"
+                    android:layout_marginTop="11dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:id="@+id/layoutEdit1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="100dp"
+                    android:layout_marginStart="40dp"
+                    android:orientation="horizontal"
+                    android:paddingRight="8dp">
+                    <CheckBox
+                        android:id="@+id/Pork_Belly"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="삼겹살" />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/layoutEdit2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingRight="8dp">
+                    <CheckBox
+                        android:id="@+id/Minced_Pork"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="다진 돼지고기" />
+<!--                        android:buttonTint="@color/black"-->
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:id="@+id/layoutEdit3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="25dp"
+                    android:layout_marginStart="40dp"
+                    android:orientation="horizontal"
+                    android:paddingRight="8dp">
+                    <CheckBox
+                        android:id="@+id/Pork_FrontLeg"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="돼지고기(앞다리살)" />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/layoutEdit4"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp">
+                    <CheckBox
+                        android:id="@+id/Pork_BackLeg"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="돼지고기(뒷다리살)"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginEnd="40dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:text="소고기"
+                    android:layout_marginEnd="10dp"
+                    android:textColor="@color/black"/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:textStyle="bold"
+                    android:background="#A0A0C8"
+                    android:layout_marginTop="11dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:id="@+id/layoutEdit5"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="107.5dp"
+                    android:layout_marginStart="40dp">
+                    <CheckBox
+                        android:id="@+id/Beef"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="소고기"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/layoutEdit6"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <CheckBox
+                        android:id="@+id/Minced_Meet"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="다진 소고기"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginEnd="40dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:text="닭고기"
+                    android:layout_marginEnd="10dp"
+                    android:textColor="@color/black"/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:textStyle="bold"
+                    android:background="#A0A0C8"
+                    android:layout_marginTop="11dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:id="@+id/layoutEdit7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginEnd="87dp"
+                    android:layout_marginStart="40dp"
+                    android:orientation="horizontal"
+                    android:paddingRight="8dp">
+                    <CheckBox
+                        android:id="@+id/Chicken_Leg_Meat"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="닭다리살" />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/layoutEdit8"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <CheckBox
+                        android:id="@+id/Chicken_Breast"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="닭가슴살"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
 
 </LinearLayout>

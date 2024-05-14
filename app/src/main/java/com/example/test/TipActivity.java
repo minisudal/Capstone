@@ -22,7 +22,7 @@ public class TipActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_tip);
+        setContentView(R.layout.fragment_tip5);
 
         editTextSecondActivity4 = findViewById(R.id.editText);
         Button saveButtonSecondActivity4 = findViewById(R.id.saveButton);

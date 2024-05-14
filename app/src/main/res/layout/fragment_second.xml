@@ -27,7 +27,7 @@
         android:layout_height="0dp"
         android:layout_marginStart="30dp"
         android:layout_marginTop="70dp"
-        android:text="채소"
+        android:text="채소류"
         app:layout_constraintHeight_percent="0.12"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -68,7 +68,7 @@
         app:layout_constraintHeight_percent="0.12"
         android:layout_marginStart="30dp"
         android:layout_marginTop="20dp"
-        android:text="조미료"
+        android:text="유제품"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/button1"/>
     <!--        android:background="@drawable/round_button" />-->
@@ -81,7 +81,7 @@
         app:layout_constraintHeight_percent="0.12"
         android:layout_marginStart="20dp"
         android:layout_marginTop="20dp"
-        android:text="유제품"
+        android:text="조미료"
         app:layout_constraintStart_toEndOf="@id/button4"
         app:layout_constraintTop_toBottomOf="@id/button2"/>
     <!--        android:background="@drawable/round_button" />-->
