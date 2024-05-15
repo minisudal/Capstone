@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="400dp"
+    android:orientation="vertical"
+    android:background="@drawable/bottom_sheet_border">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="유제품"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textAlignment="center"
+        android:textSize="23dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="15dp" /> />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/layoutEdit1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="100dp"
+            android:layout_marginStart="70dp"
+            android:orientation="horizontal"
+            android:paddingRight="8dp">
+            <CheckBox
+                android:id="@+id/Eggs"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="계란" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/layoutEdit2"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+            <CheckBox
+                android:id="@+id/Quail_Eggs"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="메추리알"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/layoutEdit3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="48dp"
+            android:layout_marginStart="70dp"
+            android:orientation="horizontal"
+            android:paddingRight="8dp">
+            <CheckBox
+                android:id="@+id/Mozzarella_Cheese"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="모짜렐라치즈" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/layoutEdit4"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+            <CheckBox
+                android:id="@+id/Sliced_Cheese"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="슬라이스치즈"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/layoutEdit5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="100dp"
+            android:layout_marginStart="70dp"
+            android:orientation="horizontal"
+            android:paddingRight="8dp">
+            <CheckBox
+                android:id="@+id/Milk"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="우유" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

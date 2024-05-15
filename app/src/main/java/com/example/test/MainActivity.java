@@ -6,105 +6,59 @@ import android.view.MenuItem;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
+
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 import java.util.ArrayList;
 import java.util.List;
+import com.example.test.databinding.ActivityMainBinding;
 
 
-public class MainActivity extends AppCompatActivity implements BottomSheetFragment1.CheckedItemsListener {
-
-    BottomNavigationView bottomNavigationView;
-    private List<String> allCheckedItems = new ArrayList<>();
-
-
-    Fragment firstFragment;
-    Fragment secondFragment;
-    Fragment thirdFragment;
-    BottomSheetFragment1 bottomSheetFragment1;
-    BottomSheetFragment2 bottomSheetFragment2;
+public class MainActivity extends AppCompatActivity {
+    private ActivityMainBinding binding;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
 
-        bottomNavigationView = findViewById(R.id.bottomNavigationView);
+        binding = ActivityMainBinding.inflate(getLayoutInflater());
+        setContentView(binding.getRoot());
 
-        // 프래그먼트 초기화
-        firstFragment = new FirstFragment();
-        secondFragment = new SecondFragment();
-        thirdFragment = new ThirdFragment();
+        replaceFragment((new FirstFragment()));
 
-        // 바텀시트를 생성하고 사용자가 필요할 때 표시하도록 설정
-        bottomSheetFragment1 = new BottomSheetFragment1();
-        bottomSheetFragment2 = new BottomSheetFragment2();
+        binding.bottomNavigationView.setOnItemSelectedListener(item -> {
+            // 리소스 ID를 변수로 저장
+            int itemId = item.getItemId();
 
-        // 기본 프래그먼트 설정
-        loadFragment(firstFragment);
-
-
-        bottomNavigationView.setOnItemSelectedListener(new BottomNavigationView.OnItemSelectedListener() {
-            @Override
-            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-                int itemId = item.getItemId();
-                Fragment fragment = null;
-
-                if(itemId == R.id.firstFragment){
-                    fragment = firstFragment;
-                } else if(itemId == R.id.secondFragment){
-                    fragment = secondFragment;
-                } else if(itemId == R.id.thirdFragment){
-                    fragment = thirdFragment;
-                }
-
-                return loadFragment(fragment);
-            }
+            if (itemId == R.id.firstFragment) {
+                replaceFragment((new FirstFragment()));
+            } else if (itemId == R.id.secondFragment) {
+                replaceFragment(new SecondFragment());
+            } else if (itemId == R.id.thirdFragment) {
+                replaceFragment(new ThirdFragment());
+            } /*else if (itemId == R.id.tipbutton4) {
+                replaceFragment(new TipFragment5());
+            } /*else if (itemId == R.id.bookmark) {
+                replaceFragment(new BookmarkFragment());
+            } else if (itemId == R.id.history) {
+                replaceFragment(new HistoryFragment());
+            }*/
+            return true;
         });
     }
-    @Override
-    public void onCheckedItemsChanged(List<String> checkedItems) {
-        allCheckedItems.clear();
-        allCheckedItems.addAll(checkedItems);
 
-        // 각 바텀시트에서 체크된 아이템 목록을 전달
-        Fragment fragment = getSupportFragmentManager().findFragmentById(R.id.fragmentContainerView);
-        if (fragment instanceof SecondFragment) {
-            ((SecondFragment) fragment).updateCheckedItems(allCheckedItems);
-        }
+    void replaceFragment(Fragment fragment){
+        FragmentManager fragmentManager = getSupportFragmentManager();
+        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+        fragmentTransaction.replace(R.id.frame_layout, fragment);
+        fragmentTransaction.commit();
     }
 
-//    @Override
-//    public void onCheckedItemsChangedBottomSheet1(List<String> checkedItems) {
-//        // BottomSheetFragment1에서 선택된 항목을 받아올 때의 동작을 여기에 구현
-//
-//    }
-//
-//    @Override
-//    public void onCheckedItemsChangedBottomSheet2(List<String> checkedItems) {
-//        // BottomSheetFragment2에서 선택된 항목을 받아올 때의 동작을 여기에 구현
-//
-//    }
-
-
-    // 프래그먼트 전환 메서드
-    boolean loadFragment(Fragment fragment) {
-        if (fragment != null) {
-            getSupportFragmentManager()
-                    .beginTransaction()
-                    .replace(R.id.fragmentContainerView, fragment)
-                    .commit();
-            return true;
-        } else {
-            return false;
-        }
+    public void selectBottomNavigationItem(int itemId) {
+        binding.bottomNavigationView.setSelectedItemId(itemId);
     }
-    public void selectSecondFragment() {
-        bottomNavigationView.setSelectedItemId(R.id.secondFragment);
-    }
-//    public void showBottomSheet() {
-//        bottomSheetFragment1.show(getSupportFragmentManager(), bottomSheetFragment1.getTag());
-//    }
 
 }

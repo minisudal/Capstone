@@ -8,7 +8,7 @@
 
     <!-- TODO: Update blank fragment layout -->
     <android.widget.Button
-        android:id="@+id/button1"
+        android:id="@+id/fridge"
         android:layout_width="300dp"
         android:layout_height="400dp"
         android:text="냉장고가 비어있습니다!\n냉장고를 채워주세요."

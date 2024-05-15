@@ -10,39 +10,32 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageView;
 
 public class FirstFragment extends Fragment {
 
     @Override
-    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,
-                             @Nullable Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        View view = inflater.inflate(R.layout.fragment_first, container, false);
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
+        View rootView = inflater.inflate(R.layout.fragment_first, container, false);
 
-        // 버튼 클릭 이벤트 처리
-        Button button = view.findViewById(R.id.button1); // 수정된 ID 사용
+        Button button = rootView.findViewById(R.id.fridge);
+
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // 두 번째 프래그먼트로 이동
-                navigateToSecondFragment();
-                // 네비게이션 바의 아이템을 두 번째 아이템으로 선택
-                if (getActivity() instanceof MainActivity) {
-                    ((MainActivity) getActivity()).selectSecondFragment();
+                // MainActivity로 전환 요청을 보냄
+                if (getActivity() != null && getActivity() instanceof MainActivity) {
+                    MainActivity mainActivity = (MainActivity) getActivity();
+                    // 카테고리 프래그먼트로 전환
+                    mainActivity.replaceFragment(new SecondFragment());
+                    // 바텀 네비게이션 뷰의 아이템을 '카테고리'로 선택
+                    mainActivity.selectBottomNavigationItem(R.id.secondFragment);
                 }
             }
         });
 
-        return view;
+        return rootView;
     }
 
-    private void navigateToSecondFragment() {
-        if (getActivity() != null) {
-            getActivity().getSupportFragmentManager()
-                    .beginTransaction()
-                    .replace(R.id.fragmentContainerView, new SecondFragment())
-                    .addToBackStack(null) // 뒤로 가기 동작을 위해 백 스택에 추가
-                    .commit();
-        }
-    }
 }
