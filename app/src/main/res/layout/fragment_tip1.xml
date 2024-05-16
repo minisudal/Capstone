@@ -1,25 +1,203 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="1000dp"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical">
 
     <!-- SecondActivity1 화면에 표시할 내용 추가 -->
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="보관방법"
-        android:textAlignment="center"
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="10dp"
         android:layout_marginTop="10dp"
-        android:textSize="25sp" />
+        android:layout_marginEnd="10dp"
+        app:srcCompat="@drawable/chevron" />
+
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/textView1"
+        android:layout_width="146dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginEnd="10dp"
+        android:gravity="center"
+        android:layout_marginBottom="40dp"
+        android:text="식재료 보관법"
+        android:textSize="25sp" />
+
+    <ScrollView
+        android:fillViewport="true"
         android:layout_width="match_parent"
-        android:layout_height="66dp"
-        android:text="1. 뭔가 팁이 있을라나" />
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="345dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="양파\n\n밀봉하지 않고 망에 담겨 있는 상태로 통풍이 잘 되는 서늘한 곳에 걸어두는 것이 좋다.\n"
+                android:textSize="20sp" />
+
+            <View
+                android:id="@+id/line_1"
+                android:layout_width="360dp"
+                android:layout_height="3dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="1dp"
+                android:background="#D9D9D9" />
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="345dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="\n당근\n\n표면의 흙을 깨끗이 씻어서 물기를 제거한 후 밀봉하여 냉장 보관하거나, 흙이 묻은 채로 신문지에 싸서 그늘지고 서늘한 곳에 보관하면 좋다. \n"
+                android:textSize="20sp" />
+
+            <View
+                android:id="@+id/line_2"
+                android:layout_width="360dp"
+                android:layout_height="3dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="1dp"
+                android:background="#D9D9D9" />
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="345dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="\n오이\n\n오이를 씻은 후 물기를 제거하고 하나씩 키친타월이나 랩으로 싸서 냉장고에 세워서 보관한다.\n"
+                android:textSize="20sp" />
+
+            <View
+                android:id="@+id/line_3"
+                android:layout_width="360dp"
+                android:layout_height="3dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="1dp"
+                android:background="#D9D9D9" />
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="345dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="\n대파\n\n단기간 보관할 경우에는 신문지에 잘 싸서 냉장고에 보관하면 된다. 물에 닿았을 경우에는 되도록 빨리 이용해야 하며, 조리 후 남은 부위는 밀폐 용기에 넣어 냉장 보관하거나 절단하여 냉동 보관한다. \n"
+                android:textSize="20sp" />
+
+            <View
+                android:id="@+id/line_4"
+                android:layout_width="360dp"
+                android:layout_height="3dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="1dp"
+                android:background="#D9D9D9" />
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="345dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="\n감자\n\n통풍이 잘되고 서늘하면서 직사광선을 받지 않는 어두운 곳에 저장한다.   온도는 1~4℃ 사이로 유지해주는 것이 중요하다. \n"
+                android:textSize="20sp" />
+
+            <View
+                android:id="@+id/line_5"
+                android:layout_width="360dp"
+                android:layout_height="3dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="1dp"
+                android:background="#D9D9D9" />
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="345dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="\n마늘\n\n깐 마늘은 깨끗이 씻어 물기를 제거한 후 밀폐 용기에 보관한다. 통마늘은 비닐 팩에 밀봉한 후 바늘구멍을 여러 개 뚫어주면 변색을 방지할 수 있다. \n"
+                android:textSize="20sp" />
+
+            <View
+                android:id="@+id/line_6"
+                android:layout_width="360dp"
+                android:layout_height="3dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="1dp"
+                android:background="#D9D9D9" />
+
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="345dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="\n계란\n\n세척한 달걀은 냉장상태로 유통, 보관되며 세척하지 않은 달걀은 상온에서 유통·보관된다. 가정에서 냉장보관할 때는 세척해서 보관한다. 실온보관 시에는 산란일로부터 1주일, 냉장보관 시에는 3주 정도 보관이 가능하다. \n"
+                android:textSize="20sp" />
+
+            <View
+                android:id="@+id/line_7"
+                android:layout_width="360dp"
+                android:layout_height="3dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="1dp"
+                android:background="#D9D9D9" />
+
+            <TextView
+                android:id="@+id/textView17"
+                android:layout_width="345dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="\n양배추\n\n겉잎 2~3장을 떼 양배추의 몸통을 싸서 냉장 보관한다. 장기간 보관할 경우 사용 용도에 맞게 손질한 후 비닐 팩에 소분하여 냉동 보관한다. \n"
+                android:textSize="20sp" />
+
+            <View
+                android:id="@+id/line_8"
+                android:layout_width="360dp"
+                android:layout_height="3dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="1dp"
+                android:background="#D9D9D9" />
+
+            <TextView
+                android:id="@+id/textView18"
+                android:layout_width="345dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="\n시금치\n\n키친타월에 싼 후 냉장고 신선실에 보관한다. 데친 시금치를 보관할 경우 비닐 팩으로 밀봉하여 냉동 보관한다. 에틸렌 가스를 배출하는 사과, 멜론, 키위 등과 함께 두면 노화가 촉진되므로 따로 보관한다.  \n"
+                android:textSize="20sp" />
+
+            <View
+                android:id="@+id/line_9"
+                android:layout_width="360dp"
+                android:layout_height="3dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="1dp"
+                android:background="#D9D9D9" />
+
+            <TextView
+                android:id="@+id/textView19"
+                android:layout_width="345dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="\n숙주\n\n물에 담가 냉장 보관하면 싱싱한 상태를 보다 오래 유지할 수 있다. 보관일은 3일 정도 되고, 보관온도는 1~5℃가 적당하다. \n"
+                android:textSize="20sp" />
+
+            <View
+                android:id="@+id/line_10"
+                android:layout_width="360dp"
+                android:layout_height="3dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="1dp"
+                android:background="#D9D9D9" />
+        </LinearLayout>
+    </ScrollView>
+
 
 </LinearLayout>

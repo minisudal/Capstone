@@ -2,22 +2,183 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="1000dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical">
 
     <!-- SecondActivity1 화면에 표시할 내용 추가 -->
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="여긴 진하가 정하자"
-        android:textAlignment="center"
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="10dp"
         android:layout_marginTop="10dp"
-        android:textSize="25sp" />
+        android:layout_marginEnd="10dp"
+        app:srcCompat="@drawable/chevron" />
 
     <TextView
         android:id="@+id/textView5"
+        android:layout_width="204dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginEnd="10dp"
+        android:gravity="center"
+        android:layout_marginBottom="40dp"
+        android:text="기타 주방 관련 정보"
+        android:textSize="25sp" />
+
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="62dp"
-        android:text="1. 여기는 또 뭘 쓰냐 쓰벌 " />
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="345dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="냉장고 냄새 없애는 법\n\n밀봉하지 않고 망에 담겨 있는 상태로 통풍이 잘 되는 서늘한 곳에 걸어두는 것이 좋다.\n"
+                android:textSize="20sp" />
+
+            <View
+                android:layout_width="360dp"
+                android:layout_height="3dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="1dp"
+                android:background="#D9D9D9" />
+
+            <TextView
+                android:layout_width="345dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="\n냉장고에 성에가 쌓이지 않게 하는 방법\n\n표면의 흙을 깨끗이 씻어서 물기를 제거한 후 밀봉하여 냉장 보관하거나, 흙이 묻은 채로 신문지에 싸서 그늘지고 서늘한 곳에 보관하면 좋다. \n"
+                android:textSize="20sp" />
+
+            <View
+                android:layout_width="360dp"
+                android:layout_height="3dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="1dp"
+                android:background="#D9D9D9" />
+
+            <TextView
+                android:layout_width="345dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="\n후라이팬 버리는 방법\n\n표면의 흙을 깨끗이 씻어서 물기를 제거한 후 밀봉하여 냉장 보관하거나, 흙이 묻은 채로 신문지에 싸서 그늘지고 서늘한 곳에 보관하면 좋다. \n"
+                android:textSize="20sp" />
+
+            <View
+                android:layout_width="360dp"
+                android:layout_height="3dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="1dp"
+                android:background="#D9D9D9" />
+
+            <TextView
+                android:layout_width="345dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="\n막힌 주방 씽크대 뚫는 방법\n\n표면의 흙을 깨끗이 씻어서 물기를 제거한 후 밀봉하여 냉장 보관하거나, 흙이 묻은 채로 신문지에 싸서 그늘지고 서늘한 곳에 보관하면 좋다. \n"
+                android:textSize="20sp" />
+
+            <View
+                android:layout_width="360dp"
+                android:layout_height="3dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="1dp"
+                android:background="#D9D9D9" />
+
+            <TextView
+                android:layout_width="345dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="\n전자레인지 사용 가능 용기인지 확인하는 방법\n\n표면의 흙을 깨끗이 씻어서 물기를 제거한 후 밀봉하여 냉장 보관하거나, 흙이 묻은 채로 신문지에 싸서 그늘지고 서늘한 곳에 보관하면 좋다. \n"
+                android:textSize="20sp" />
+
+            <View
+                android:layout_width="360dp"
+                android:layout_height="3dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="1dp"
+                android:background="#D9D9D9" />
+
+            <TextView
+                android:layout_width="345dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="\n칼을 안전하게 버리는 방법\n\n표면의 흙을 깨끗이 씻어서 물기를 제거한 후 밀봉하여 냉장 보관하거나, 흙이 묻은 채로 신문지에 싸서 그늘지고 서늘한 곳에 보관하면 좋다. \n"
+                android:textSize="20sp" />
+
+            <View
+                android:layout_width="360dp"
+                android:layout_height="3dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="1dp"
+                android:background="#D9D9D9" />
+
+            <TextView
+                android:layout_width="345dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="\n냉장고 청소하는 방법\n\n표면의 흙을 깨끗이 씻어서 물기를 제거한 후 밀봉하여 냉장 보관하거나, 흙이 묻은 채로 신문지에 싸서 그늘지고 서늘한 곳에 보관하면 좋다. \n"
+                android:textSize="20sp" />
+
+            <View
+                android:layout_width="360dp"
+                android:layout_height="3dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="1dp"
+                android:background="#D9D9D9" />
+
+            <TextView
+                android:layout_width="345dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="\n전자레인지 냄새 제거하는 방법\n\n표면의 흙을 깨끗이 씻어서 물기를 제거한 후 밀봉하여 냉장 보관하거나, 흙이 묻은 채로 신문지에 싸서 그늘지고 서늘한 곳에 보관하면 좋다. \n"
+                android:textSize="20sp" />
+
+            <View
+                android:layout_width="360dp"
+                android:layout_height="3dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="1dp"
+                android:background="#D9D9D9" />
+
+            <TextView
+                android:layout_width="345dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="\n전자레인지 청소하는 방법\n\n표면의 흙을 깨끗이 씻어서 물기를 제거한 후 밀봉하여 냉장 보관하거나, 흙이 묻은 채로 신문지에 싸서 그늘지고 서늘한 곳에 보관하면 좋다. \n"
+                android:textSize="20sp" />
+
+            <View
+                android:layout_width="360dp"
+                android:layout_height="3dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="1dp"
+                android:background="#D9D9D9" />
+
+            <TextView
+                android:layout_width="345dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="\n주방 기름때 청소하는 방법\n\n표면의 흙을 깨끗이 씻어서 물기를 제거한 후 밀봉하여 냉장 보관하거나, 흙이 묻은 채로 신문지에 싸서 그늘지고 서늘한 곳에 보관하면 좋다. \n"
+                android:textSize="20sp" />
+
+            <View
+                android:layout_width="360dp"
+                android:layout_height="3dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="1dp"
+                android:background="#D9D9D9" />
+
+        </LinearLayout>
+    </ScrollView>
+
 </LinearLayout>

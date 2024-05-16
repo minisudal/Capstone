@@ -1,23 +1,183 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="1000dp"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical">
 
     <!-- SecondActivity1 화면에 표시할 내용 추가 -->
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="음식 처리 였나"
-        android:textAlignment="center"
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="10dp"
         android:layout_marginTop="10dp"
-        android:textSize="25sp" />
+        android:layout_marginEnd="10dp"
+        app:srcCompat="@drawable/chevron" />
 
     <TextView
-        android:id="@+id/textView5"
+        android:id="@+id/textView2"
+        android:layout_width="146dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginEnd="10dp"
+        android:gravity="center"
+        android:layout_marginBottom="40dp"
+        android:text="식재료 처리법"
+        android:textSize="25sp" />
+
+    <ScrollView
+        android:fillViewport="true"
         android:layout_width="match_parent"
-        android:layout_height="62dp"
-        android:text="1. 집가고 싶다. " />
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="345dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="\n장류\n\n밀봉하지 않고 망에 담겨 있는 상태로 통풍이 잘 되는 서늘한 곳에 걸어두는 것이 좋다.. \n"
+                android:textSize="20sp" />
+
+            <View
+                android:layout_width="360dp"
+                android:layout_height="3dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="1dp"
+                android:background="#D9D9D9" />
+
+            <TextView
+                android:layout_width="345dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="\n계란껍질\n\n표면의 흙을 깨끗이 씻어서 물기를 제거한 후 밀봉하여 냉장 보관하거나, 흙이 묻은 채로 신문지에 싸서 그늘지고 서늘한 곳에 보관하면 좋다. \n"
+                android:textSize="20sp" />
+
+            <View
+                android:layout_width="360dp"
+                android:layout_height="3dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="1dp"
+                android:background="#D9D9D9" />
+
+            <TextView
+                android:layout_width="345dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="\n양파\n\n표면의 흙을 깨끗이 씻어서 물기를 제거한 후 밀봉하여 냉장 보관하거나, 흙이 묻은 채로 신문지에 싸서 그늘지고 서늘한 곳에 보관하면 좋다. \n"
+                android:textSize="20sp" />
+
+            <View
+                android:layout_width="360dp"
+                android:layout_height="3dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="1dp"
+                android:background="#D9D9D9" />
+
+            <TextView
+                android:layout_width="345dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="\n식용유, 기름\n\n표면의 흙을 깨끗이 씻어서 물기를 제거한 후 밀봉하여 냉장 보관하거나, 흙이 묻은 채로 신문지에 싸서 그늘지고 서늘한 곳에 보관하면 좋다. \n"
+                android:textSize="20sp" />
+
+            <View
+                android:layout_width="360dp"
+                android:layout_height="3dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="1dp"
+                android:background="#D9D9D9" />
+
+            <TextView
+                android:layout_width="345dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="\n동물 뼈\n\n표면의 흙을 깨끗이 씻어서 물기를 제거한 후 밀봉하여 냉장 보관하거나, 흙이 묻은 채로 신문지에 싸서 그늘지고 서늘한 곳에 보관하면 좋다. \n"
+                android:textSize="20sp" />
+
+            <View
+                android:layout_width="360dp"
+                android:layout_height="3dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="1dp"
+                android:background="#D9D9D9" />
+
+            <TextView
+                android:layout_width="345dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="\n김치\n\n표면의 흙을 깨끗이 씻어서 물기를 제거한 후 밀봉하여 냉장 보관하거나, 흙이 묻은 채로 신문지에 싸서 그늘지고 서늘한 곳에 보관하면 좋다. \n"
+                android:textSize="20sp" />
+
+            <View
+                android:layout_width="360dp"
+                android:layout_height="3dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="1dp"
+                android:background="#D9D9D9" />
+
+            <TextView
+                android:layout_width="345dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="\n소금\n\n표면의 흙을 깨끗이 씻어서 물기를 제거한 후 밀봉하여 냉장 보관하거나, 흙이 묻은 채로 신문지에 싸서 그늘지고 서늘한 곳에 보관하면 좋다. \n"
+                android:textSize="20sp" />
+
+            <View
+                android:layout_width="360dp"
+                android:layout_height="3dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="1dp"
+                android:background="#D9D9D9" />
+
+            <TextView
+                android:layout_width="345dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="\n약, 영양제\n\n표면의 흙을 깨끗이 씻어서 물기를 제거한 후 밀봉하여 냉장 보관하거나, 흙이 묻은 채로 신문지에 싸서 그늘지고 서늘한 곳에 보관하면 좋다. \n"
+                android:textSize="20sp" />
+
+            <View
+                android:layout_width="360dp"
+                android:layout_height="3dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="1dp"
+                android:background="#D9D9D9" />
+
+            <TextView
+                android:layout_width="345dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="\n고춧가루\n\n표면의 흙을 깨끗이 씻어서 물기를 제거한 후 밀봉하여 냉장 보관하거나, 흙이 묻은 채로 신문지에 싸서 그늘지고 서늘한 곳에 보관하면 좋다. \n"
+                android:textSize="20sp" />
+
+            <View
+                android:layout_width="360dp"
+                android:layout_height="3dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="1dp"
+                android:background="#D9D9D9" />
+
+            <TextView
+                android:layout_width="345dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="\n쌀\n\n표면의 흙을 깨끗이 씻어서 물기를 제거한 후 밀봉하여 냉장 보관하거나, 흙이 묻은 채로 신문지에 싸서 그늘지고 서늘한 곳에 보관하면 좋다. \n"
+                android:textSize="20sp" />
+
+            <View
+                android:layout_width="360dp"
+                android:layout_height="3dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="1dp"
+                android:background="#D9D9D9" />
+
+        </LinearLayout>
+    </ScrollView>
+
 </LinearLayout>

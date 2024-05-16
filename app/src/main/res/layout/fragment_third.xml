@@ -60,11 +60,6 @@
         android:layout_marginBottom="66dp"
         android:text="메모장" />
 
-<!--    <ImageView-->
-<!--        android:id="@+id/imageView"-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="182dp"-->
-<!--        app:srcCompat="@android:drawable/ic_dialog_alert" />-->
 
 
 </RelativeLayout>

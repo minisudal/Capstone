@@ -2,6 +2,8 @@ package com.example.test;
 
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.ImageButton;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -48,6 +50,7 @@ public class MainActivity extends AppCompatActivity {
             }*/
             return true;
         });
+
     }
 
     void replaceFragment(Fragment fragment){
@@ -56,6 +59,14 @@ public class MainActivity extends AppCompatActivity {
         fragmentTransaction.replace(R.id.frame_layout, fragment);
         fragmentTransaction.commit();
     }
+
+//    void replaceFragment2(Fragment fragment) {
+//        FragmentManager fragmentManager = getSupportFragmentManager();
+//        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+//        fragmentTransaction.replace(R.id.fragment_container, fragment);
+//        fragmentTransaction.addToBackStack(null); // 백스택에 추가하여 뒤로 가기 버튼을 사용할 수 있게 함
+//        fragmentTransaction.commit();
+//    }
 
     public void selectBottomNavigationItem(int itemId) {
         binding.bottomNavigationView.setSelectedItemId(itemId);
