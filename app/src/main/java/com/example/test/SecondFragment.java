@@ -89,7 +89,9 @@ public class SecondFragment extends Fragment {
                 R.id.Pork_Belly, R.id.Beef, R.id.Pork_FrontLeg, R.id.Pork_BackLeg, R.id.Minced_Pork, R.id.Minced_Meet, R.id.Chicken_Leg_Meat, R.id.Chicken_Breast,
                 R.id.Sea_Mustard, R.id.Shrimp, R.id.Sugar, R.id.Salt, R.id.Pepper, R.id.Red_Pepper_Powder, R.id.Aged_Soy_Sauce, R.id.Brewed_Soy_Sauce, R.id.Red_Pepper_Paste,
                 R.id.Fermented_Soybean_Paste, R.id.Ssamjang, R.id.Ketchup, R.id.Mayonnaise, R.id.Mustard, R.id.Sesame_Oil, R.id.Starch_Syrup, R.id.Oyster_Sauce, R.id.Salted_Anchovy_Sauce,
-                R.id.Eggs, R.id.Quail_Eggs, R.id.Mozzarella_Cheese, R.id.Sliced_Cheese, R.id.Milk}; // Add more checkbox IDs as needed
+                R.id.Eggs, R.id.Quail_Eggs, R.id.Mozzarella_Cheese, R.id.Sliced_Cheese, R.id.Milk, R.id.Cooking_Oil, R.id.Spam, R.id.Sausages, R.id.Salmon, R.id.Mackerel,
+                R.id.Tuna_Can, R.id.Shrimp, R.id.Crab, R.id.Squid, R.id.Octopus, R.id.Mussel, R.id.Scallop, R.id.Clam, R.id.Morning_Bread, R.id.Rice, R.id.Noodles, R.id.Extra_Udon_Noodles,
+                R.id.Potato_Starch, R.id.Pan_Frying_Powder, R.id.Rice_Cake, R.id.Cellophane_Noodles, R.id.Fish_Cake, R.id.Water}; // Add more checkbox IDs as needed
 
         for (int checkboxId : checkboxIds) {
             CheckBox checkBox = dialog.findViewById(checkboxId);
