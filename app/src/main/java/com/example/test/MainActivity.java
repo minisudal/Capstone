@@ -10,6 +10,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
+import androidx.lifecycle.ViewModelProvider;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
@@ -20,11 +21,14 @@ import com.example.test.databinding.ActivityMainBinding;
 
 public class MainActivity extends AppCompatActivity {
     private ActivityMainBinding binding;
+    private SharedViewModel sharedViewModel;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+//        sharedViewModel = new ViewModelProvider(this).get(SharedViewModel.class);
 
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
@@ -53,6 +57,10 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    public SharedViewModel getSharedViewModel() {
+        return sharedViewModel;
+    }
+
     void replaceFragment(Fragment fragment){
         FragmentManager fragmentManager = getSupportFragmentManager();
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
@@ -60,13 +68,6 @@ public class MainActivity extends AppCompatActivity {
         fragmentTransaction.commit();
     }
 
-//    void replaceFragment2(Fragment fragment) {
-//        FragmentManager fragmentManager = getSupportFragmentManager();
-//        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-//        fragmentTransaction.replace(R.id.fragment_container, fragment);
-//        fragmentTransaction.addToBackStack(null); // 백스택에 추가하여 뒤로 가기 버튼을 사용할 수 있게 함
-//        fragmentTransaction.commit();
-//    }
 
     public void selectBottomNavigationItem(int itemId) {
         binding.bottomNavigationView.setSelectedItemId(itemId);
