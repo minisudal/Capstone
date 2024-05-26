@@ -6,6 +6,8 @@
         <item name="colorPrimary">@color/black</item>
 <!--        <item name="colorPrimaryVariant">@color/black</item> // 앱 맨 위 글자색-->
 
+
+
     </style>
 
     <style name="Theme.Test" parent="Base.Theme.Test" />

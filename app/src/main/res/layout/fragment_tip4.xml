@@ -1,23 +1,353 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="1000dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical">
 
     <!-- SecondActivity1 화면에 표시할 내용 추가 -->
 
-    <TextView
-        android:id="@+id/textView2"
+    <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="여긴 진하가 정하자"
-        android:textAlignment="center"
-        android:layout_marginTop="10dp"
-        android:textSize="25sp" />
+        android:layout_height="match_parent">
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:backgroundTint="#00000000"
+            app:srcCompat="@drawable/chevron" />
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="40dp"
+            android:text="주방 살림 TIP"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:textSize="22dp"/>
+    </FrameLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="120dp">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
 
-    <TextView
-        android:id="@+id/textView5"
-        android:layout_width="match_parent"
-        android:layout_height="62dp"
-        android:text="1. 여기는 또 뭘 쓰냐 쓰벌 " />
-</LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="30dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="냉장고 냄새 없애는 법"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:textColor="#136E5E"
+                        android:layout_marginBottom="15dp"/>
+                    <TextView
+                        android:layout_width="345dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="1. 청소 시작 전에 전원 코드를 분리하고 \n베이킹 소다와 물로 냉장고의 벽과 선반을 닦는다.\n2. 베이킹 소다를 뒤쪽 선반에 놓아두거나 \n끓인 사과 사이다 식초로 냉동실 냄새를 잡는다."
+                        android:textSize="15dp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="30dp"
+                    android:layout_marginTop="20dp"
+                    android:background="#D9D9D9" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="30dp"
+                    android:layout_marginTop="20dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="냉장고에 성에가 쌓이지 않게 하는 방법"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:textColor="#136E5E"
+                        android:layout_marginBottom="15dp"/>
+                    <TextView
+                        android:layout_width="345dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="1. 냉장고와 냉동고 문을 가능한 많이 열지 않는다.\n2. 각 문의 내부 주변 밀봉재를 닦아 잔여물을 제거한다.\n3. 부피가 큰 식품을 냉각 장치에서 멀리 옮긴다.\n4. 냉장고와 냉동고를 너무 꽉 채우지 않는다."
+                        android:textSize="15dp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="30dp"
+                    android:layout_marginTop="20dp"
+                    android:background="#D9D9D9" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="30dp"
+                    android:layout_marginTop="20dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="후라이팬 버리는 방법"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:textColor="#136E5E"
+                        android:layout_marginBottom="15dp"/>
+                    <TextView
+                        android:layout_width="345dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="1. 음식물이 묻어있을 경우 깨끗이 닦아낸다.\n2. 플라스틱 손잡이 등 다른 재질을 분리할 수 있는 경우 떼어낸 후 각각의 재질별로 분리 배출하고 분리가 어려운 경우 그대로 배출한다."
+                        android:textSize="15dp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="30dp"
+                    android:layout_marginTop="20dp"
+                    android:background="#D9D9D9" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="30dp"
+                    android:layout_marginTop="20dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="막힌 주방 씽크대 뚫는 방법"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:textColor="#136E5E"
+                        android:layout_marginBottom="15dp"/>
+                    <TextView
+                        android:layout_width="345dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="1. 싱크대의 일부를 뜨거운 물로 채우고 화장실 뚫어뻥을 빠르게 위아래로 움직인다.\n2. 베이킹 소다 한 컵, 식초 한 컵을 넣고 5분 기다린 후 따뜻한 물을 흘려보낸다."
+                        android:textSize="15dp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="30dp"
+                    android:layout_marginTop="20dp"
+                    android:background="#D9D9D9" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="30dp"
+                    android:layout_marginTop="20dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="전자레인지 사용 가능 용기인지\n확인하는 방법"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:textColor="#136E5E"
+                        android:layout_marginBottom="15dp"/>
+                    <TextView
+                        android:layout_width="345dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="1. 플라스틱의 경우 전자레인지에 안전하게 사용할 수 있다는 표시(전자레인지 용기/전자레인지 사용가능/물결모양)를 찾는다.\n2. 유리, 도자기는 전자레인지에 사용할 수 있으나 금속과 납 유약을 사용한 용기는 사용이 불가능하다."
+                        android:textSize="15dp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="30dp"
+                    android:layout_marginTop="20dp"
+                    android:background="#D9D9D9" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="30dp"
+                    android:layout_marginTop="20dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="칼을 안전하게 버리는 방법"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:textColor="#136E5E"
+                        android:layout_marginBottom="15dp"/>
+                    <TextView
+                        android:layout_width="345dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="1. 고기 포장 용지나 뽁뽁이, 판지 등을 사용해 칼을 감싼다.\n2. 감싼 칼을 판지 박스에 넣고 박스를 테이프로 단단히 고정한 후에 쓰레기통에 버린다."
+                        android:textSize="15dp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="30dp"
+                    android:layout_marginTop="20dp"
+                    android:background="#D9D9D9" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="30dp"
+                    android:layout_marginTop="20dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="냉장고 청소하는 방법"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:textColor="#136E5E"
+                        android:layout_marginBottom="15dp"/>
+                    <TextView
+                        android:layout_width="345dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="1. 모든 식품을 꺼내고 선반과 서랍을 일반 주방세제와 뜨거운 물로 씻는다.\n2. 냉장고 표면은 부드러운 천과 염소가 들어가지 않은 주방 세제로 닦는다.\n3. 냉장고 문의 패킹은 천을 뜨거운 물과 주방세제에 담갔다가 닦는다."
+                        android:textSize="15dp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="30dp"
+                    android:layout_marginTop="20dp"
+                    android:background="#D9D9D9" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="30dp"
+                    android:layout_marginTop="20dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="전자레인지 냄새 제거하는 방법"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:textColor="#136E5E"
+                        android:layout_marginBottom="15dp"/>
+                    <TextView
+                        android:layout_width="345dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="1. 식초(혹은 레몬) 4테이블 스푼과 물 한 컵을 혼합한 용액을 전자레인지에 넣고 4분간 가열하고, 용액에서 김이 나기 시작하면 5분 동안 더 가열했다가 내부를 닦는다.\n2. 베이킹 소다 1티스푼과 따뜻한 물 1리터를 섞어서 스펀지나 행주에 묻혀 닦아주며 얼룩과 악취를 제거한다."
+                        android:textSize="15dp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="30dp"
+                    android:layout_marginTop="20dp"
+                    android:background="#D9D9D9" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="30dp"
+                    android:layout_marginTop="20dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="전자레인지 청소하는 방법"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:textColor="#136E5E"
+                        android:layout_marginBottom="15dp"/>
+                    <TextView
+                        android:layout_width="345dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="1. 전자레인지용 그릇에 물 1컵과 감귤류 과일 2-3조각이나 식초 1테이블스푼을 넣는다.\n2. 전자레인지에서 냄새가 난다면 베이킹 소다 1테이블스푼을 용액에 추가한다.\n3. 그릇이 깨지는 것을 방지하기 위해 나무 꼬치를 넣고 5분 동안 용액을 가열한다.\n4. 수증기가 찌든 때를 불릴 수 있도록 5분 기다렸다가 비눗물로 세척한다."
+                        android:textSize="15dp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="30dp"
+                    android:layout_marginTop="20dp"
+                    android:background="#D9D9D9" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="30dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="주방 기름때 청소하는 방법"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:textColor="#136E5E"
+                        android:layout_marginBottom="15dp"/>
+                    <TextView
+                        android:layout_width="345dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="1. 살짝 따뜻한 물에 과탄산소다를 두 스푼에서 세 스푼 정도 타서 섞은 후 닦는다.\n2. 따뜻한 물 반 스푼에 베이킹 파우더 한 스푼과 주방 세제 반 스푼을 섞어 스펀지에 묻힌 다음 오염이 된 곳에 문질러 지운다.\n3. 주방 세제를 키친타월 등에 충분히 적셔서 오염 부위에 올려두었다가 따뜻한 물로 씻어내고 닦아낸다."
+                        android:textSize="15dp" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</RelativeLayout>

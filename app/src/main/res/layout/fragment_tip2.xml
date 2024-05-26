@@ -1,23 +1,352 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="1000dp"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical">
 
     <!-- SecondActivity1 화면에 표시할 내용 추가 -->
 
-    <TextView
-        android:id="@+id/textView2"
+    <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="음식 처리 였나"
-        android:textAlignment="center"
-        android:layout_marginTop="10dp"
-        android:textSize="25sp" />
+        android:layout_height="match_parent">
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:backgroundTint="#00000000"
+            app:srcCompat="@drawable/chevron" />
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="40dp"
+            android:text="음식물 분리배출"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:textSize="22dp"/>
+    </FrameLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="120dp">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
 
-    <TextView
-        android:id="@+id/textView5"
-        android:layout_width="match_parent"
-        android:layout_height="62dp"
-        android:text="1. 집가고 싶다. " />
-</LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="30dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="장류"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:textColor="#136E5E"
+                        android:layout_marginBottom="15dp"/>
+                    <TextView
+                        android:layout_width="345dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="된장, 고추장, 쌈장, 춘장 등 되직한 장류는 비닐봉지에 담아 단단히 묶은 후 일반쓰레기(종량제봉투)로, 간장 등 기름기가 없는 액체류는 배수구로 흘려보낸다."
+                        android:textSize="15dp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="30dp"
+                    android:layout_marginTop="20dp"
+                    android:background="#D9D9D9" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="30dp"
+                    android:layout_marginTop="20dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="계란껍질"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:textColor="#136E5E"
+                        android:layout_marginBottom="15dp"/>
+                    <TextView
+                        android:layout_width="345dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="달걀의 단단한 껍질은 일반쓰레기(종량제봉투)로 버린다."
+                        android:textSize="15dp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="30dp"
+                    android:layout_marginTop="20dp"
+                    android:background="#D9D9D9" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="30dp"
+                    android:layout_marginTop="20dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="양파"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:textColor="#136E5E"
+                        android:layout_marginBottom="15dp"/>
+                    <TextView
+                        android:layout_width="345dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="양파 껍질과 양파 뿌리는 일반쓰레기(종량제봉투)로 버리고, 상했거나 오래되어 먹을 수 없는 양파는 음식물쓰레기로 버린다."
+                        android:textSize="15dp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="30dp"
+                    android:layout_marginTop="20dp"
+                    android:background="#D9D9D9" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="30dp"
+                    android:layout_marginTop="20dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="식용유"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:textColor="#136E5E"
+                        android:layout_marginBottom="15dp"/>
+                    <TextView
+                        android:layout_width="345dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="폐식용유 수거함이 있다면 이물질이 섞이지 않게 잘 모아서 배출하고, 수거함이 없다면 기름의 양이 적을 경우 키친 타올에 기름을 흡수시키거나 닦아내어 일반쓰레기로 버리고, 양이 많을 경우 우유팩이나 재활용이 가능한 통에 신문지를 적당히 구겨넣고 기름을 부어준다. 기름이 신문지에 완전히 흡수되면 빼내어 일반쓰레기로 버린다."
+                        android:textSize="15dp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="30dp"
+                    android:layout_marginTop="20dp"
+                    android:background="#D9D9D9" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="30dp"
+                    android:layout_marginTop="20dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="동물 뼈"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:textColor="#136E5E"
+                        android:layout_marginBottom="15dp"/>
+                    <TextView
+                        android:layout_width="345dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="먹고 남은 뼈는 일반쓰레기(종량제봉투)로 버린다."
+                        android:textSize="15dp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="30dp"
+                    android:layout_marginTop="20dp"
+                    android:background="#D9D9D9" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="30dp"
+                    android:layout_marginTop="20dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="김치"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:textColor="#136E5E"
+                        android:layout_marginBottom="15dp"/>
+                    <TextView
+                        android:layout_width="345dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="상해서 먹지 못하는 김치는 김장 양념을 물에 한 번 헹군 후 음식물쓰레기로 버린다. 소량의 김치국물은 하수구로 흘려보내도 무방하지만 건더기는 걸러서 음식물 쓰레기로 버린다."
+                        android:textSize="15dp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="30dp"
+                    android:layout_marginTop="20dp"
+                    android:background="#D9D9D9" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="30dp"
+                    android:layout_marginTop="20dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="소금"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:textColor="#136E5E"
+                        android:layout_marginBottom="15dp"/>
+                    <TextView
+                        android:layout_width="345dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="불연성 쓰레기 봉투로 버려야 하지만 가정에서 소량으로 발생하는 소금은 물에 녹여서 배수구로 흘려버려도 된다."
+                        android:textSize="15dp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="30dp"
+                    android:layout_marginTop="20dp"
+                    android:background="#D9D9D9" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="30dp"
+                    android:layout_marginTop="20dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="약, 영양제"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:textColor="#136E5E"
+                        android:layout_marginBottom="15dp"/>
+                    <TextView
+                        android:layout_width="345dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="종류에 상관없이 가까운 약국, 보건소, 보건지료소 등에 비치된 폐의약품수거함에 버린다."
+                        android:textSize="15dp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="30dp"
+                    android:layout_marginTop="20dp"
+                    android:background="#D9D9D9" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="30dp"
+                    android:layout_marginTop="20dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="고춧가루"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:textColor="#136E5E"
+                        android:layout_marginBottom="15dp"/>
+                    <TextView
+                        android:layout_width="345dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="가정에서 배출하는 소량의 고춧가루는 음식물쓰레기로 버려도 되지만 공장이나 식당에서 대량으로 버려야 할 경우 생활폐기물로 신고 배출해야 한다."
+                        android:textSize="15dp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="30dp"
+                    android:layout_marginTop="20dp"
+                    android:background="#D9D9D9" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="30dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="쌀"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:textColor="#136E5E"
+                        android:layout_marginBottom="15dp"/>
+                    <TextView
+                        android:layout_width="345dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="생쌀이나 취사된 밥은 모두 음식물 쓰레기로 버리고 묵은 쌀, 곰팡이 핀 쌀, 딱딱해진 밥, 누릉지도 모두 음식물 쓰레기로 버린다."
+                        android:textSize="15dp" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</RelativeLayout>

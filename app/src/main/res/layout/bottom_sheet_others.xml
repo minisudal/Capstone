@@ -2,89 +2,292 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="400dp"
+    android:layout_height="500dp"
     android:orientation="vertical"
     android:background="@drawable/bottom_sheet_border">
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
         android:text="기타"
+        android:textStyle="bold"
+        android:textColor="@color/black"
         android:textAlignment="center"
-        android:textSize="20dp"
-        android:padding="10dp" />
+        android:textSize="23dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="15dp" />
 
-    <LinearLayout
-        android:orientation="horizontal"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:scrollbars="none">
         <LinearLayout
-            android:id="@+id/layoutEdit1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="100dp"
-            android:layout_marginStart="10dp"
-            android:orientation="horizontal"
-            android:padding="8dp">
-
-            <CheckBox
-                android:id="@+id/checkBox5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:text="기타1" />
-
-        </LinearLayout>
-        <LinearLayout
-            android:id="@+id/layoutEdit2"
-            android:orientation="horizontal"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:padding="8dp">
-
-            <CheckBox
-                android:id="@+id/checkBox6"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginEnd="40dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:text="곡류 / 면류"
+                    android:layout_marginEnd="10dp"
+                    android:textColor="@color/black"/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:textStyle="bold"
+                    android:background="#A0A0C8"
+                    android:layout_marginTop="11dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:text="기타2"/>
-
-        </LinearLayout>
-    </LinearLayout>
-
-    <LinearLayout
-        android:orientation="horizontal"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-        <LinearLayout
-            android:id="@+id/layoutEdit3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="100dp"
-            android:layout_marginStart="10dp"
-            android:orientation="horizontal"
-            android:padding="8dp">
-
-            <CheckBox
-                android:id="@+id/checkBox7"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:id="@+id/layoutEdit1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="100dp"
+                    android:layout_marginStart="40dp"
+                    android:orientation="horizontal">
+                    <CheckBox
+                        android:id="@+id/Morning_Bread"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="모닝빵" />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/layoutEdit2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingRight="8dp">
+                    <CheckBox
+                        android:id="@+id/Rice"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="밥" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:text="기타3" />
-
-        </LinearLayout>
-        <LinearLayout
-            android:id="@+id/layoutEdit4"
-            android:orientation="horizontal"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:padding="8dp">
-
-            <CheckBox
-                android:id="@+id/checkBox8"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:id="@+id/layoutEdit3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="113dp"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+                    <CheckBox
+                        android:id="@+id/Noodles"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="소면" />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/layoutEdit4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp">
+                    <CheckBox
+                        android:id="@+id/Extra_Udon_Noodles"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="우동사리" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:text="기타4"/>
-
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginEnd="40dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:text="전분 / 가루류"
+                    android:layout_marginEnd="10dp"
+                    android:textColor="@color/black"/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:textStyle="bold"
+                    android:background="#A0A0C8"
+                    android:layout_marginTop="11dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:id="@+id/layoutEdit5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="88dp"
+                    android:layout_marginStart="40dp"
+                    android:orientation="horizontal">
+                    <CheckBox
+                        android:id="@+id/Potato_Starch"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="감자전분" />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/layoutEdit6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingRight="8dp">
+                    <CheckBox
+                        android:id="@+id/Pan_Frying_Powder"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="부침가루" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginEnd="40dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:text="떡 / 당면류"
+                    android:layout_marginEnd="10dp"
+                    android:textColor="@color/black"/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:textStyle="bold"
+                    android:background="#A0A0C8"
+                    android:layout_marginTop="11dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:id="@+id/layoutEdit7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="127dp"
+                    android:layout_marginStart="40dp"
+                    android:orientation="horizontal">
+                    <CheckBox
+                        android:id="@+id/Rice_Cake"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="떡" />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/layoutEdit8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <CheckBox
+                        android:id="@+id/Cellophane_Noodles"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="당면" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginEnd="40dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:text="가공식품"
+                    android:layout_marginEnd="10dp"
+                    android:textColor="@color/black"/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:textStyle="bold"
+                    android:background="#A0A0C8"
+                    android:layout_marginTop="11dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:id="@+id/layoutEdit9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="108dp"
+                    android:layout_marginStart="40dp"
+                    android:orientation="horizontal">
+                    <CheckBox
+                        android:id="@+id/Fish_Cake"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="어묵" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginEnd="40dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:text="기타"
+                    android:layout_marginEnd="10dp"
+                    android:textColor="@color/black"/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:textStyle="bold"
+                    android:background="#A0A0C8"
+                    android:layout_marginTop="11dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:id="@+id/layoutEdit11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="108dp"
+                    android:layout_marginStart="40dp"
+                    android:orientation="horizontal">
+                    <CheckBox
+                        android:id="@+id/Water"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="물" />
+                </LinearLayout>
+            </LinearLayout>
         </LinearLayout>
-    </LinearLayout>
+    </ScrollView>
 </LinearLayout>

@@ -2,7 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="400dp"
+    android:layout_height="500dp"
     android:orientation="vertical"
     android:background="@drawable/bottom_sheet_border">
 
@@ -16,39 +16,303 @@
         android:textAlignment="center"
         android:textSize="23dp"
         android:paddingTop="10dp"
-        android:paddingBottom="15dp" /> />
-
-    <LinearLayout
-        android:orientation="horizontal"
+        android:paddingBottom="15dp" />
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
         <LinearLayout
-            android:id="@+id/layoutEdit1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:layout_marginEnd="100dp"
-            android:layout_marginStart="70dp"
-            android:orientation="horizontal"
-            android:paddingRight="8dp">
-            <CheckBox
-                android:id="@+id/Sea_Mustard"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:text="미역" />
-        </LinearLayout>
-        <LinearLayout
-            android:id="@+id/layoutEdit2"
-            android:orientation="horizontal"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp">
-            <CheckBox
-                android:id="@+id/Shrimp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginEnd="40dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:text="어류"
+                    android:layout_marginEnd="10dp"
+                    android:textColor="@color/black"/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:textStyle="bold"
+                    android:background="#A0A0C8"
+                    android:layout_marginTop="11dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:text="새우"/>
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:id="@+id/layoutEdit1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="108dp"
+                    android:layout_marginStart="40dp"
+                    android:orientation="horizontal">
+                    <CheckBox
+                        android:id="@+id/Salmon"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="연어" />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/layoutEdit2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingRight="8dp">
+                    <CheckBox
+                        android:id="@+id/Mackerel"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="고등어" />
+                    <!--                        android:buttonTint="@color/black"-->
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:id="@+id/layoutEdit12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="108dp"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+                    <CheckBox
+                        android:id="@+id/Tuna_Can"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="참치(캔)" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginEnd="40dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:text="갑각류"
+                    android:layout_marginEnd="10dp"
+                    android:textColor="@color/black"/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:textStyle="bold"
+                    android:background="#A0A0C8"
+                    android:layout_marginTop="11dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:id="@+id/layoutEdit3"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="107.5dp"
+                    android:layout_marginStart="40dp">
+                    <CheckBox
+                        android:id="@+id/Shrimp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="새우"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/layoutEdit4"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <CheckBox
+                        android:id="@+id/Crab"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="게"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginEnd="40dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:text="두족류"
+                    android:layout_marginEnd="10dp"
+                    android:textColor="@color/black"/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:textStyle="bold"
+                    android:background="#A0A0C8"
+                    android:layout_marginTop="11dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:id="@+id/layoutEdit5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="94dp"
+                    android:layout_marginStart="40dp"
+                    android:orientation="horizontal">
+                    <CheckBox
+                        android:id="@+id/Squid"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="오징어" />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/layoutEdit6"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <CheckBox
+                        android:id="@+id/Octopus"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="문어"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginEnd="40dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:text="패류"
+                    android:layout_marginEnd="10dp"
+                    android:textColor="@color/black"/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:textStyle="bold"
+                    android:background="#A0A0C8"
+                    android:layout_marginTop="11dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:id="@+id/layoutEdit7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="107dp"
+                    android:layout_marginStart="40dp"
+                    android:orientation="horizontal">
+                    <CheckBox
+                        android:id="@+id/Mussel"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="홍합" />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/layoutEdit8"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <CheckBox
+                        android:id="@+id/Scallop"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="가리비"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:id="@+id/layoutEdit9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="95dp"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+                    <CheckBox
+                        android:id="@+id/Clam"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="조개"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginEnd="40dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:text="해조류"
+                    android:layout_marginEnd="10dp"
+                    android:textColor="@color/black"/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:textStyle="bold"
+                    android:background="#A0A0C8"
+                    android:layout_marginTop="11dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:id="@+id/layoutEdit11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="108dp"
+                    android:layout_marginStart="40dp"
+                    android:orientation="horizontal">
+                    <CheckBox
+                        android:id="@+id/Sea_Mustard"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="미역" />
+                </LinearLayout>
+            </LinearLayout>
         </LinearLayout>
-    </LinearLayout>
+    </ScrollView>
 
 </LinearLayout>

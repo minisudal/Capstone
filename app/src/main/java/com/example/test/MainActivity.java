@@ -2,12 +2,15 @@ package com.example.test;
 
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.ImageButton;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
+import androidx.lifecycle.ViewModelProvider;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
@@ -18,11 +21,14 @@ import com.example.test.databinding.ActivityMainBinding;
 
 public class MainActivity extends AppCompatActivity {
     private ActivityMainBinding binding;
+    private SharedViewModel sharedViewModel;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+//        sharedViewModel = new ViewModelProvider(this).get(SharedViewModel.class);
 
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
@@ -48,6 +54,11 @@ public class MainActivity extends AppCompatActivity {
             }*/
             return true;
         });
+
+    }
+
+    public SharedViewModel getSharedViewModel() {
+        return sharedViewModel;
     }
 
     void replaceFragment(Fragment fragment){
@@ -56,6 +67,7 @@ public class MainActivity extends AppCompatActivity {
         fragmentTransaction.replace(R.id.frame_layout, fragment);
         fragmentTransaction.commit();
     }
+
 
     public void selectBottomNavigationItem(int itemId) {
         binding.bottomNavigationView.setSelectedItemId(itemId);
