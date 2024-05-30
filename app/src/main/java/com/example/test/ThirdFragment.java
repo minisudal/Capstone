@@ -2,6 +2,7 @@ package com.example.test;
 
 import android.app.Dialog;
 import android.content.Context;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -34,7 +35,10 @@ public class ThirdFragment extends Fragment {
         button2.setOnClickListener(v -> showDialog(R.layout.fragment_tip2));
         button3.setOnClickListener(v -> showDialog(R.layout.fragment_tip3));
         button4.setOnClickListener(v -> showDialog(R.layout.fragment_tip4));
-        button5.setOnClickListener(v -> showDialog(R.layout.fragment_tip5));
+        button5.setOnClickListener(v -> {
+            Intent intent = new Intent(requireContext(), TipActivity.class);
+            startActivity(intent);
+        });
 
         return rootView;
     }

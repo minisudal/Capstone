@@ -44,6 +44,7 @@
 // FirstFragment.java
 package com.example.test;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -78,6 +79,7 @@ public class FirstFragment extends Fragment {
         ImageView fridgeImage = rootView.findViewById(R.id.fridge);
         TextView fridgeText = rootView.findViewById(R.id.fridgeText);
         LinearLayout menuLayout = rootView.findViewById(R.id.menuLayout);
+        Button button = rootView.findViewById(R.id.Memo);
 
         if (hasCheckedItems()) {
             // 체크된 항목이 있는 경우 리스트를 표시
@@ -105,6 +107,11 @@ public class FirstFragment extends Fragment {
                     mainActivity.selectBottomNavigationItem(R.id.secondFragment);
                 }
             }
+        });
+
+        button.setOnClickListener(v -> {
+            Intent intent = new Intent(requireContext(), TipActivity.class);
+            startActivity(intent);
         });
 
         return rootView;
